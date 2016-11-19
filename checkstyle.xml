@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+ï»¿<?xml version="1.0"?>
 <!DOCTYPE module PUBLIC
           "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
           "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
@@ -21,10 +21,10 @@
 
 <module name="Checker">
 
-    <!--Ðàñøèðåíèå ôàéëà äîëæíî áûòü java, properties, xml-->
+    <!--Ð Ð°ÑÑˆÐ¸Ñ€ÐµÐ½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð° Ð´Ð¾Ð»Ð¶Ð½Ð¾ Ð±Ñ‹Ñ‚ÑŒ java, properties, xml-->
     <property name="fileExtensions" value="java, properties, xml"/>
 
-    <!--Ïàêåòû äîëæíû èìåòü JavaDoc-->
+    <!--ÐŸÐ°ÐºÐµÑ‚Ñ‹ Ð´Ð¾Ð»Ð¶Ð½Ñ‹ Ð¸Ð¼ÐµÑ‚ÑŒ JavaDoc-->
     <module name="JavadocPackage"/>
 
     <!-- Checks for Size Violations.                    -->

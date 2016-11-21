@@ -32,7 +32,6 @@ public class Calculator {
 
 	public void add(double first, double second) {
 		this.result = first + second;
-		System.out.println(first + " + " + second + " = " + this.result);
 	}
 
 /**
@@ -43,7 +42,6 @@ public class Calculator {
 
 	public void subtract(double first, double second) {
 		this.result = first - second;
-		System.out.println(first + " - " + second + " = " + this.result);
 	}
 
 /**
@@ -54,7 +52,6 @@ public class Calculator {
 
 	public void multiply(double first, double second) {
 		this.result = first * second;
-		System.out.println(first + " * " + second + " = " + this.result);
 	}
 
 /**
@@ -66,7 +63,6 @@ public class Calculator {
 	public void div(double first, double second) {
 		if (second != 0) {
 			this.result = first / second;
-			System.out.println(first + " / " + second + " = " + this.result);
 		} else {
 			System.out.println("You can not divide by zero");
 		}

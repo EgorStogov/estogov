@@ -18,4 +18,14 @@ public class Max {
 		int name = first > second ? first : second;
 		return name;
 	}
+	/**
+* Метод нахождения наибольшего числа из трех данных.
+* @param first - первое число
+* @param second - второе число
+* @param third - третье число
+* @return some value
+*/
+	public int max(int first, int second, int third) {
+		return max(max(first, second), third);
+	}
 }

@@ -35,7 +35,7 @@ public class MaxTest {
 * Max test first == second.
 */
     @Test
-    public void whenAddTwoValuesThenReturnMax() {
+    public void whenTwoValuesEqualToEachOtherThenReturnValue() {
 		final int first = 3;
 		final int second = 3;
 		final int res = 3;

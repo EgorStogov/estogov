@@ -79,4 +79,16 @@ import static org.junit.Assert.assertThat;
 		final double res = -1.30;
 		assertThat(result, is(res));
 	}
-  }
+
+	/**
+	 *Div test with zero.
+	 */
+
+//	@Test
+	//public void whenDivideOneByZeroThenPrintError() {
+		//Calculator calc = new Calculator();
+		//calc.div(this.a, this.c);
+		//double result = calc.getResult();
+		//assertThat(result, is("You can not divide by zero"));
+	//}
+ }

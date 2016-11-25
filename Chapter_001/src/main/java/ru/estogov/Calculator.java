@@ -54,4 +54,12 @@ public class Calculator {
 			System.out.println("You can not divide by zero");
 		}
 	}
+
+//	public void div(double first, double second) {
+	//	if (second != 0) {
+		//	this.result = first / second;
+		//} else {
+			//System.out.println("You can not divide by zero");
+		//}
+	//}
 }

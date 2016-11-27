@@ -18,7 +18,8 @@ public class DuplicateTest {
 	@Test
 	public void whenGiveStringThenGetStringWithoutReiteration() {
 		Duplicate duplicate = new Duplicate();
+		String[] words = new String[] {"1", "2", "2", "1"};
 		String[] test = new String[] {"1", "2"};
-		assertThat(duplicate.delete("1", "2", "2", "1"), is(test));
+		assertThat(duplicate.delete(words), is(test));
 	}
 }

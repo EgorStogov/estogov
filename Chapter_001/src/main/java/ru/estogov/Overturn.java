@@ -10,14 +10,11 @@ package ru.estogov;
 public class Overturn {
 /**
 * Метод поворота массива.
-* @param a - число первой строчки
-* @param b - число второй строчки
-* @param c - число третьей строчки
+* @param values - массив
 * @return some value
 */
-	public int[][] overturn(int a, int b, int c) {
+	public int[][] overturn(int[][] values) {
 		final int three = 3;
-		int[][] values = new int[][] {{a, a, a}, {b, b, b}, {c, c, c}};
 		int[][] newValues = new int[three][three];
 		for (int i = 0; i <= values.length - 1; i++) {
 			for (int j = 0; j <= values.length - 1; j++) {

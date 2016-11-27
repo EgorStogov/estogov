@@ -10,16 +10,11 @@ package ru.estogov;
 public class Sorting {
 /**
 * Метод пузырька.
-* @param a - первое число
-* @param b - второе число
-* @param c - третье число
-* @param d - четвертое число
-* @param e - пятое число
+* @param values - массив
 * @return some value
 */
-	public int[] bubble(int a, int b, int c, int d, int e) {
+	public int[] bubble(int[] values) {
 		int x;
-		int[] values = new int[] {a, b, c, d, e};
 		for (int i = 0; i <= values.length - 1; i++) {
 			for (int j = 0; j <= values.length - i - 2; j++) {
 				if (values[j] > values[j + 1]) {

@@ -22,7 +22,8 @@ public class TurnTest {
 		final int b = 2;
 		final int c = 3;
 		final int d = 4;
+		int[] mass = new int[] {a, b, c, d};
 		int[] test = new int[] {d, c, b, a};
-		assertThat(turn.back(a, b, c, d), is(test));
+		assertThat(turn.back(mass), is(test));
 	}
 }

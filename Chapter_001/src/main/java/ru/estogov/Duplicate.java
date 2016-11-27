@@ -12,14 +12,10 @@ import java.util.Arrays;
 public class Duplicate {
 /**
 * Метод удаления повторений в массиве.
-* @param a - первое слово
-* @param b - второе слово
-* @param c - третье слово
-* @param d - четвертое слово
+* @param phrase - массив строк
 * @return some value
 */
-	public String[] delete(String a, String b, String c, String d) {
-		String[] phrase = new String[] {a, b, c, d};
+	public String[] delete(String[] phrase) {
 		String x;
 		int k = 1;
 		for (int i = 0; i <= phrase.length - k; i++) {

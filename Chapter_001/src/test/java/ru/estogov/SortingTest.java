@@ -23,7 +23,8 @@ public class SortingTest {
 		final int c = 1;
 		final int d = 2;
 		final int e = 4;
+		int[] values = new int[] {a, b, c, d, e};
 		int[] test = new int[] {c, d, a, e, b};
-		assertThat(sort.bubble(a, b, c, d, e), is(test));
+		assertThat(sort.bubble(values), is(test));
 	}
 }

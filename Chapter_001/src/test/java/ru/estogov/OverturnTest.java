@@ -21,7 +21,8 @@ public class OverturnTest {
 		final int a = 1;
 		final int b = 2;
 		final int c = 3;
+		int[][] values = new int[][] {{a, a, a}, {b, b, b}, {c, c, c}};
 		int[][] test = new int[][] {{a, b, c}, {a, b, c}, {a, b, c}};
-		assertThat(overturn.overturn(a, b, c), is(test));
+		assertThat(overturn.overturn(values), is(test));
 	}
 }

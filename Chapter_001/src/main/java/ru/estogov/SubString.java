@@ -1,7 +1,7 @@
 package ru.estogov;
 
 /**
-* class SubString решение тестового задания части 001.
+* class SubString СЂРµС€РµРЅРёРµ С‚РµСЃС‚РѕРІРѕРіРѕ Р·Р°РґР°РЅРёСЏ С‡Р°СЃС‚Рё 001.
 * @author Egor Stogov (egst@rambler.ru)
 * @since 29.11.2016
 * @version 1
@@ -9,12 +9,33 @@ package ru.estogov;
 
 public class SubString {
 /**
-* Метод, проверяющий является ли строка sub подстрокой origin.
-* @param origin - строка
-* @param sub - потенциальная подстрока 
+* РњРµС‚РѕРґ, РїСЂРѕРІРµСЂСЏСЋС‰РёР№ СЏРІР»СЏРµС‚СЃСЏ Р»Рё СЃС‚СЂРѕРєР° sub РїРѕРґСЃС‚СЂРѕРєРѕР№ origin.
+* @param origin - СЃС‚СЂРѕРєР°
+* @param sub - РїРѕС‚РµРЅС†РёР°Р»СЊРЅР°СЏ РїРѕРґСЃС‚СЂРѕРєР°
 * @return some value
 */
-	public boolean contains(String origin, string sub) {
-		String 
+	public boolean contains(String origin, String sub) {
+		char[] originArray = origin.toCharArray();
+		char[] subArray = sub.toCharArray();
+		boolean isIt = false;
+		for (int i = 0; i <= origin.length() - 1; i++) {
+			if (originArray[i] == subArray[0]) {
+				for (int j = 1; j <= sub.length(); j++) {
+					if (originArray[i + j] == subArray[j]) {
+						if (j == sub.length() - 1) {
+							isIt = true;
+							break;
+						}
+						continue;
+					} else {
+						break;
+					}
+				}
+			}
+			if (isIt) {
+				break;
+			}
+		}
+		return isIt;
 	}
 }
